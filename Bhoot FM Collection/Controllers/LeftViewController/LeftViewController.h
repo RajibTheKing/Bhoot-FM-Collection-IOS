@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface LeftViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 {
-    NSArray *menuData;
     NSString *cellID;
 }
 @property (weak, nonatomic) IBOutlet UITableView *leftTableView;
+@property (strong, nonatomic) NSMutableArray *menuData;
 
 @end

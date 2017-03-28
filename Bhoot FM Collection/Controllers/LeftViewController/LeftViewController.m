@@ -7,7 +7,6 @@
 //
 
 #import "LeftViewController.h"
-
 @interface LeftViewController ()
 
 @end
@@ -20,15 +19,16 @@
     [super viewDidLoad];
     
     cellID = @"LeftViewCell";
-    menuData = @[@"All Episodes",
-                 @"Offline Episodes",
-                 @"Online Radio",
-                 @"Rate This App",
-                 @"Share This App",
-                 @"Send Feedback",
-                 @"More Free Apps",
-                 @"About"
-                 ];
+    self.menuData = [[NSMutableArray alloc]
+                     initWithArray:@[@"All Episodes",
+                                     @"Offline Episodes",
+                                     @"Online Radio",
+                                     @"Rate This App",
+                                     @"Share This App",
+                                     @"Send Feedback",
+                                     @"More Free Apps",
+                                     @"About",
+                                     ]];
 
     //- (void)insertRowsAtIndexPaths:(NSArray *)indexPaths withRowAnimation: (UITableViewRowAnimation)animation;
     // Do any additional setup after loading the view.
@@ -44,7 +44,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [menuData count];
+    return [self.menuData count];
 }
 
 // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
@@ -58,9 +58,31 @@
         cell  = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
     }
     
-    cell.textLabel.text = [menuData objectAtIndex:indexPath.row];
+    cell.textLabel.text = [self.menuData objectAtIndex:indexPath.row];
     
     return cell;
+    
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"TheKing--> I am inside Action didSelectRowAtIndexPath %i", (int)indexPath.row);
+    
+    [self.leftTableView beginUpdates];
+    
+    /*
+    NSObject *temp = [self.menuData objectAtIndex:0];
+    [self.menuData replaceObjectAtIndex:0 withObject:[_menuData objectAtIndex:indexPath.row]];
+    [self.menuData replaceObjectAtIndex:indexPath.row withObject:temp];
+    */
+    
+    [self.menuData removeObjectAtIndex:indexPath.row];
+    [self.leftTableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    [self.leftTableView reloadData];
+
+    
+    [self.leftTableView endUpdates];
+    
     
 }
 
