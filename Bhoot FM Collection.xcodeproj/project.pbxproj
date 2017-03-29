@@ -23,6 +23,12 @@
 		DA7F3CA11E8A2E9C00B16333 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7F3CA01E8A2E9C00B16333 /* ViewController.m */; };
 		DA7F3CA51E8A2EC800B16333 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7F3CA41E8A2EC800B16333 /* LeftViewController.m */; };
 		DA7F3CA91E8A2ED700B16333 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7F3CA81E8A2ED700B16333 /* RightViewController.m */; };
+		DA89EB861E8B92D800C13D26 /* Music.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA89EB811E8B92D800C13D26 /* Music.storyboard */; };
+		DA89EB871E8B92D800C13D26 /* MusicIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = DA89EB831E8B92D800C13D26 /* MusicIndicator.m */; };
+		DA89EB881E8B92D800C13D26 /* MusicSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = DA89EB851E8B92D800C13D26 /* MusicSlider.m */; };
+		DA89EB8D1E8B95ED00C13D26 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = DA89EB8C1E8B95ED00C13D26 /* Track.m */; };
+		DA89EB931E8B960700C13D26 /* NAKPlaybackIndicatorContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA89EB901E8B960700C13D26 /* NAKPlaybackIndicatorContentView.m */; };
+		DA89EB941E8B960700C13D26 /* NAKPlaybackIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA89EB921E8B960700C13D26 /* NAKPlaybackIndicatorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +81,18 @@
 		DA7F3CA41E8A2EC800B16333 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftViewController.m; path = "Bhoot FM Collection/Controllers/LeftViewController/LeftViewController.m"; sourceTree = "<group>"; };
 		DA7F3CA71E8A2ED700B16333 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RightViewController.h; path = "Bhoot FM Collection/Controllers/RightViewController/RightViewController.h"; sourceTree = "<group>"; };
 		DA7F3CA81E8A2ED700B16333 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RightViewController.m; path = "Bhoot FM Collection/Controllers/RightViewController/RightViewController.m"; sourceTree = "<group>"; };
+		DA89EB811E8B92D800C13D26 /* Music.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Music.storyboard; path = "Bhoot FM Collection/Views/Music/Music.storyboard"; sourceTree = "<group>"; };
+		DA89EB821E8B92D800C13D26 /* MusicIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MusicIndicator.h; path = "Bhoot FM Collection/Views/Music/MusicIndicator.h"; sourceTree = "<group>"; };
+		DA89EB831E8B92D800C13D26 /* MusicIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MusicIndicator.m; path = "Bhoot FM Collection/Views/Music/MusicIndicator.m"; sourceTree = "<group>"; };
+		DA89EB841E8B92D800C13D26 /* MusicSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MusicSlider.h; path = "Bhoot FM Collection/Views/Music/MusicSlider.h"; sourceTree = "<group>"; };
+		DA89EB851E8B92D800C13D26 /* MusicSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MusicSlider.m; path = "Bhoot FM Collection/Views/Music/MusicSlider.m"; sourceTree = "<group>"; };
+		DA89EB8B1E8B95ED00C13D26 /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Track.h; path = "Bhoot FM Collection/Thirdparty/DOUAudioStreamer/Track.h"; sourceTree = "<group>"; };
+		DA89EB8C1E8B95ED00C13D26 /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Track.m; path = "Bhoot FM Collection/Thirdparty/DOUAudioStreamer/Track.m"; sourceTree = "<group>"; };
+		DA89EB8F1E8B960700C13D26 /* NAKPlaybackIndicatorContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NAKPlaybackIndicatorContentView.h; path = "Bhoot FM Collection/Thirdparty/NAKPlaybackIndicatorView/NAKPlaybackIndicatorContentView.h"; sourceTree = "<group>"; };
+		DA89EB901E8B960700C13D26 /* NAKPlaybackIndicatorContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NAKPlaybackIndicatorContentView.m; path = "Bhoot FM Collection/Thirdparty/NAKPlaybackIndicatorView/NAKPlaybackIndicatorContentView.m"; sourceTree = "<group>"; };
+		DA89EB911E8B960700C13D26 /* NAKPlaybackIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NAKPlaybackIndicatorView.h; path = "Bhoot FM Collection/Thirdparty/NAKPlaybackIndicatorView/NAKPlaybackIndicatorView.h"; sourceTree = "<group>"; };
+		DA89EB921E8B960700C13D26 /* NAKPlaybackIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NAKPlaybackIndicatorView.m; path = "Bhoot FM Collection/Thirdparty/NAKPlaybackIndicatorView/NAKPlaybackIndicatorView.m"; sourceTree = "<group>"; };
+		DA89EB961E8B967400C13D26 /* UIConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIConstant.h; path = "Bhoot FM Collection/Common/UIConstant.h"; sourceTree = "<group>"; };
 		ED0DF6C38C64537E422D47BD /* Pods-Bhoot FM Collection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bhoot FM Collection.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bhoot FM Collection/Pods-Bhoot FM Collection.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +142,9 @@
 		DA126E861E7E44300067C74B = {
 			isa = PBXGroup;
 			children = (
+				DA89EB971E8B967800C13D26 /* Common */,
+				DA89EB8A1E8B95CA00C13D26 /* Thirdparty */,
+				DA89EB891E8B92DC00C13D26 /* Music */,
 				DA7F3CAA1E8A2ED900B16333 /* RightViewController */,
 				DA7F3CA61E8A2ECA00B16333 /* LeftViewController */,
 				DA7F3CA21E8A2EA100B16333 /* CenterViewController */,
@@ -229,6 +250,55 @@
 				DA7F3CA81E8A2ED700B16333 /* RightViewController.m */,
 			);
 			name = RightViewController;
+			sourceTree = "<group>";
+		};
+		DA89EB891E8B92DC00C13D26 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				DA89EB811E8B92D800C13D26 /* Music.storyboard */,
+				DA89EB821E8B92D800C13D26 /* MusicIndicator.h */,
+				DA89EB831E8B92D800C13D26 /* MusicIndicator.m */,
+				DA89EB841E8B92D800C13D26 /* MusicSlider.h */,
+				DA89EB851E8B92D800C13D26 /* MusicSlider.m */,
+			);
+			name = Music;
+			sourceTree = "<group>";
+		};
+		DA89EB8A1E8B95CA00C13D26 /* Thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+				DA89EB951E8B960F00C13D26 /* NAKPlaybackIndicatorView */,
+				DA89EB8E1E8B95FA00C13D26 /* DOUAudioStreamer */,
+			);
+			name = Thirdparty;
+			sourceTree = "<group>";
+		};
+		DA89EB8E1E8B95FA00C13D26 /* DOUAudioStreamer */ = {
+			isa = PBXGroup;
+			children = (
+				DA89EB8B1E8B95ED00C13D26 /* Track.h */,
+				DA89EB8C1E8B95ED00C13D26 /* Track.m */,
+			);
+			name = DOUAudioStreamer;
+			sourceTree = "<group>";
+		};
+		DA89EB951E8B960F00C13D26 /* NAKPlaybackIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				DA89EB8F1E8B960700C13D26 /* NAKPlaybackIndicatorContentView.h */,
+				DA89EB901E8B960700C13D26 /* NAKPlaybackIndicatorContentView.m */,
+				DA89EB911E8B960700C13D26 /* NAKPlaybackIndicatorView.h */,
+				DA89EB921E8B960700C13D26 /* NAKPlaybackIndicatorView.m */,
+			);
+			name = NAKPlaybackIndicatorView;
+			sourceTree = "<group>";
+		};
+		DA89EB971E8B967800C13D26 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DA89EB961E8B967400C13D26 /* UIConstant.h */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA89EB861E8B92D800C13D26 /* Music.storyboard in Resources */,
 				DA126EA51E7E44310067C74B /* LaunchScreen.storyboard in Resources */,
 				DA126EA21E7E44310067C74B /* Assets.xcassets in Resources */,
 				DA126E9D1E7E44310067C74B /* Main.storyboard in Resources */,
@@ -418,12 +489,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA89EB881E8B92D800C13D26 /* MusicSlider.m in Sources */,
 				DA7F3CA51E8A2EC800B16333 /* LeftViewController.m in Sources */,
 				DA126ED91E7E58DC0067C74B /* MMDrawerController.m in Sources */,
+				DA89EB871E8B92D800C13D26 /* MusicIndicator.m in Sources */,
+				DA89EB931E8B960700C13D26 /* NAKPlaybackIndicatorContentView.m in Sources */,
 				DA126EDB1E7E58DC0067C74B /* UIViewController+MMDrawerController.m in Sources */,
 				DA7F3CA11E8A2E9C00B16333 /* ViewController.m in Sources */,
+				DA89EB941E8B960700C13D26 /* NAKPlaybackIndicatorView.m in Sources */,
 				DA126EDA1E7E58DC0067C74B /* MMDrawerVisualState.m in Sources */,
 				DA7F3CA91E8A2ED700B16333 /* RightViewController.m in Sources */,
+				DA89EB8D1E8B95ED00C13D26 /* Track.m in Sources */,
 				DA126E971E7E44310067C74B /* AppDelegate.m in Sources */,
 				DA126EA01E7E44310067C74B /* Bhoot_FM_Collection.xcdatamodeld in Sources */,
 				DA126E941E7E44310067C74B /* main.m in Sources */,
