@@ -10,4 +10,9 @@
 
 @interface RightViewController : UIViewController
 
+- (void)HandleActionTest;
+
+
++ (id)sharedManager;
+
 @end

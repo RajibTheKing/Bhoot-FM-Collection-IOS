@@ -14,7 +14,9 @@
 
 - (IBAction)leftBtnAction:(id)sender;
 - (IBAction)rightBtnAction:(id)sender;
+- (void)HandleActionTest;
 
++ (id)sharedManager;
 
 @end
 

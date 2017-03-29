@@ -7,6 +7,11 @@
 //
 
 #import "LeftViewController.h"
+
+#import "ViewController.h"
+#import "RightViewController.h"
+
+
 @interface LeftViewController ()
 
 @end
@@ -79,9 +84,10 @@
     [self.menuData removeObjectAtIndex:indexPath.row];
     [self.leftTableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     [self.leftTableView reloadData];
-
-    
     [self.leftTableView endUpdates];
+    
+    [[ViewController sharedManager] HandleActionTest];
+    [[RightViewController sharedManager] HandleActionTest];
     
     
 }
@@ -95,5 +101,16 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark Singleton Methods
++ (id)sharedManager
+{
+    static LeftViewController *sharedLeftViewController = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedLeftViewController = [[self alloc] init];
+    });
+    return sharedLeftViewController;
+}
 
 @end

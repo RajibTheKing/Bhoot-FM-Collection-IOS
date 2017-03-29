@@ -24,6 +24,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)HandleActionTest
+{
+    NSLog(@"HandleAction Test inside RightViewController");
+}
+
 /*
 #pragma mark - Navigation
 
@@ -33,5 +38,17 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+#pragma mark Singleton Methods
++ (id)sharedManager
+{
+    static RightViewController *sharedLeftViewController = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedLeftViewController = [[self alloc] init];
+    });
+    return sharedLeftViewController;
+}
 
 @end

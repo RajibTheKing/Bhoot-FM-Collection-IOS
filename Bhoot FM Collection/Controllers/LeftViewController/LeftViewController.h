@@ -14,4 +14,5 @@
 @property (weak, nonatomic) IBOutlet UITableView *leftTableView;
 @property (strong, nonatomic) NSMutableArray *menuData;
 
++ (id)sharedManager;
 @end

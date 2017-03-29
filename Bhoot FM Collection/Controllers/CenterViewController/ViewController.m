@@ -15,7 +15,6 @@
 @end
 
 @implementation ViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -43,5 +42,19 @@
     [app.drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
     
 }
-
+- (void)HandleActionTest
+{
+    NSLog(@"Found an Action");
+    
+}
+#pragma mark Singleton Methods
++ (id)sharedManager
+{
+    static ViewController *sharedViewController = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedViewController = [[self alloc] init];
+    });
+    return sharedViewController;
+}
 @end
