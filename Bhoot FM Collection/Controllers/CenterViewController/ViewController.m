@@ -42,6 +42,12 @@
     [app.drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
     
 }
+
+- (IBAction)testBtnAction:(id)sender
+{
+    NSLog(@"Inside testBtnAction");
+}
+
 - (void)HandleActionTest
 {
     NSLog(@"Found an Action");

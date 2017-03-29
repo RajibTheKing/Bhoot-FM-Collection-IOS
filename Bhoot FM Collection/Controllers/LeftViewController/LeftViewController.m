@@ -75,14 +75,15 @@
     
     [self.leftTableView beginUpdates];
     
-    /*
+    
     NSObject *temp = [self.menuData objectAtIndex:0];
     [self.menuData replaceObjectAtIndex:0 withObject:[_menuData objectAtIndex:indexPath.row]];
     [self.menuData replaceObjectAtIndex:indexPath.row withObject:temp];
-    */
     
+    /*
     [self.menuData removeObjectAtIndex:indexPath.row];
     [self.leftTableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    */
     [self.leftTableView reloadData];
     [self.leftTableView endUpdates];
     

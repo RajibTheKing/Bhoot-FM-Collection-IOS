@@ -14,6 +14,10 @@
 
 - (IBAction)leftBtnAction:(id)sender;
 - (IBAction)rightBtnAction:(id)sender;
+- (IBAction)testBtnAction:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *testBtn;
+
 - (void)HandleActionTest;
 
 + (id)sharedManager;
